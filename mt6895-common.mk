@@ -218,9 +218,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     FrameworkResOverlay \
+    NotchBarKiller \
+    SystemUIOverlay \
     TetheringOVerlay \
-    WifiOverlay \
-    SystemUIOverlay
+    WifiOverlay
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
