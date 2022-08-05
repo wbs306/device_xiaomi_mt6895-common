@@ -100,13 +100,6 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
-    name: "init.project.rc",
-    src: "etc/init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
     name: "init.sensor_2_0.rc",
     src: "etc/init.sensor_2_0.rc",
     sub_dir: "init/hw",
@@ -144,13 +137,6 @@ prebuilt_etc {
 prebuilt_etc {
     name: "meta_init.project.rc",
     src: "etc/meta_init.project.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
-prebuilt_etc {
-    name: "meta_init.rc",
-    src: "etc/meta_init.rc",
     sub_dir: "init/hw",
     vendor: true,
 }
