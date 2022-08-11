@@ -1,3 +1,8 @@
+# Micharge HAL
+attribute hal_micharge;
+attribute hal_micharge_client;
+attribute hal_micharge_server;
+
 # OTrP Agent HAL
 attribute hal_otrpagent;
 attribute hal_otrpagent_client;

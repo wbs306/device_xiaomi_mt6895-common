@@ -1,0 +1,22 @@
+
+# allow batterysecret sysfs_usb_supply:dir { ioctl read getattr lock open watch watch_reads search };
+# allow batterysecret sysfs_usb_supply:file { ioctl read getattr lock map open watch watch_reads };
+# allow batterysecret sysfs_usb_supply:lnk_file { ioctl read getattr lock map open watch watch_reads };
+# allow batterysecret sysfs_usb_supply:file { write };
+# allow hal_micharge_default sysfs_usb_supply:dir { ioctl read getattr lock open watch watch_reads search };
+# allow hal_micharge_default sysfs_usb_supply:file { ioctl read getattr lock map open watch watch_reads };
+# allow hal_micharge_default sysfs_usb_supply:lnk_file { ioctl read getattr lock map open watch watch_reads };
+# allow hal_micharge_default sysfs_usb_supply:file { ioctl read write getattr lock append map open watch watch_reads };
+# allow charge_logger sysfs_usb_supply:dir { ioctl read getattr lock open watch watch_reads search };
+# allow charge_logger sysfs_usb_supply:file { ioctl read getattr lock map open watch watch_reads };
+# allow charge_logger sysfs_usb_supply:lnk_file { ioctl read getattr lock map open watch watch_reads };
+
+# allow batterysecret sysfs_battery_supply:file { ioctl read write getattr lock append map open watch watch_reads };
+# allow batterysecret sysfs_battery_supply:dir { ioctl read getattr lock open watch watch_reads search };
+
+# allow hal_micharge_default sysfs_battery_supply:dir { ioctl read getattr lock open watch watch_reads search };
+# allow hal_micharge_default sysfs_battery_supply:file { ioctl read getattr lock map open watch watch_reads };
+# allow hal_micharge_default sysfs_battery_supply:lnk_file { ioctl read getattr lock map open watch watch_reads };
+# allow hal_micharge_default sysfs_battery_supply:file { ioctl read write getattr lock append map open watch watch_reads };
+# allow charge_logger sysfs_battery_supply:file { ioctl read write getattr lock append map open watch watch_reads };
+# allow charge_logger sysfs_battery_supply:dir { ioctl read getattr lock open watch watch_reads search };

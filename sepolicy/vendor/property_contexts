@@ -1,3 +1,6 @@
+# Fast charging
+ro.vendor.mtk_fast_charging_support u:object_r:vendor_mtk_fast_charging_support_prop:s0
+
 # Kernel module
 vendor.all.modules.ready                    u:object_r:vendor_mtk_device_prop:s0
 

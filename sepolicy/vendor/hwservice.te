@@ -1,1 +1,2 @@
 type hal_otrpagent_hwservice, hwservice_manager_type;
+type hal_micharge_hwservice, hwservice_manager_type;

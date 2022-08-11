@@ -1,2 +1,10 @@
+type sysfs_usbpd_device, fs_type, sysfs_type;
+
 allow init mqsas_common_file:file { read write create setattr open };
 allow init mqsas_common_file:dir { ioctl read write getattr lock open watch watch_reads add_name remove_name search };
+
+allow init sysfs_battery_supply:file { setattr };
+allow init sysfs_usb_supply:file { setattr };
+
+allow init sysfs_usbpd_device:file setattr;
+allow ueventd sysfs_usbpd_device:file { write lock append map open };

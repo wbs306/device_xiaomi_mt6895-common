@@ -28,3 +28,9 @@ allow system_app mqsas_common_file:dir { ioctl read write getattr lock open watc
 
 allow system_app vendor_sysfs_graphics:dir { ioctl read getattr lock open watch watch_reads search };
 allow system_app vendor_sysfs_graphics:file { ioctl read write getattr lock append map open watch watch_reads };
+
+allow system_app sysfs_usb_supply:file { ioctl read getattr lock map open watch watch_reads };
+allow system_app sysfs_usb_supply:dir { ioctl read getattr lock open watch watch_reads search };
+
+allow system_app sysfs_battery_supply:file { ioctl read getattr lock map open watch watch_reads };
+allow system_app sysfs_battery_supply:dir { ioctl read getattr lock open watch watch_reads search };

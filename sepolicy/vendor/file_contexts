@@ -1,6 +1,9 @@
 # Audio
 /data/vendor/cit(/.*)?            u:object_r:vendor_audio_data_file:s0
 
+# Batterysecret
+/(vendor|system/vendor)/bin/batterysecret            u:object_r:batterysecret_exec:s0
+
 # Bluetooth
 /(vendor|system/vendor)/bin/hw/android\.hardware\.bluetooth@1\.1-service-mediatek           u:object_r:mtk_hal_bluetooth_exec:s0
 
@@ -73,6 +76,9 @@
 # MD
 /data/vendor_de/md(/.*)?     u:object_r:data_vendor_de_md_file:s0
 
+# Mi charge
+/(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service     u:object_r:hal_micharge_default_exec:s0
+
 # Mi IC
 /data/vendor/mi_ic(/.*)?                                u:object_r:mi_ic_data_file:s0
 
@@ -98,12 +104,31 @@
 # Power
 /dev/xiaomi-touch             u:object_r:vendor_touchfeature_device:s0
 
+# Power supply
+/sys/devices/platform/11e01000.i2c/i2c-5/5-0034/11e01000.i2c:mt6375@34:mtk_gauge/power_supply/battery(/.*)?                      u:object_r:sysfs_battery_supply:s0
+/sys/devices/platform/11d06000.i2c/i2c-9/9-0055/power_supply/bms(/.*)?                     u:object_r:sysfs_battery_supply:s0
+/sys/devices/platform/11015000.i2c0/i2c-0/0-0035/power_supply/Charger_Identify(/.*)?             u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/11e00000.i2c/i2c-0/0-0035/power_supply/xmusb350(/.*)?        u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/soc/11280000.i2c/i2c-5/5-0034/11280000.i2c:mt6375@34:mtk_gauge/power_supply/battery(/.*)?                      u:object_r:sysfs_battery_supply:s0
+/sys/devices/platform/soc/11d04000.i2c/i2c-7/7-0055/power_supply/bms(/.*)?         u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/charger/power_supply/usb(/.*)?                       u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/mt_charger/power_supply/ac(/.*)?                             u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/mt_charger/power_supply/main(/.*)?                   u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/mt_charger/power_supply/charger(/.*)?                        u:object_r:sysfs_usb_supply:s0
+/sys/devices/platform/xagapro_charger/power_supply/usb(/.*)?                       u:object_r:sysfs_usb_supply:s0
+
 # RPMB device
 /dev/0:0:0:49476  u:object_r:teei_rpmb_device:s0
+
+# Smartcharging
+/(vendor|system/vendor)/bin/smartcharging                                     u:object_r:smartcharging_exec:s0
 
 # Thermal
 /data/vendor/thermal(/.*)?                           u:object_r:thermal_data_file:s0
 /(vendor|system/vendor)/bin/mi_thermald              u:object_r:mi_thermald_exec:s0
+
+# USB PD
+/sys/devices/platform/pd_adapter/Charging_Adapter/pd_adapter(/.*)?                 u:object_r:sysfs_usbpd_device:s0
 
 # Wifi
 /data/vendor/wlan_logs(/.*)?                         u:object_r:vendor_wifi_vendor_data_file:s0

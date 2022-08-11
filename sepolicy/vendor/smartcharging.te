@@ -1,0 +1,19 @@
+type smartcharging, domain;
+type smartcharging_exec, file_type, exec_type, vendor_file_type;
+
+type_transition init smartcharging_exec:process smartcharging;
+
+allow init smartcharging_exec:file { read getattr map execute open };
+allow init smartcharging:process { transition };
+allow smartcharging smartcharging_exec:file { read getattr map execute open entrypoint };
+dontaudit init smartcharging:process { noatsecure };
+allow init smartcharging:process { siginh rlimitinh };
+allow smartcharging input_device:dir { ioctl read getattr lock open watch watch_reads search };
+allow smartcharging input_device:file { ioctl read getattr lock map open watch watch_reads };
+allow smartcharging kmsg_device:chr_file { write lock append map open };
+allow smartcharging self:netlink_socket { read write create getattr setattr lock append map bind connect getopt setopt shutdown };
+allow smartcharging self:netlink_route_socket { read write create getattr setattr lock append map bind connect getopt setopt shutdown nlmsg_read nlmsg_write };
+allow smartcharging self:capability { fsetid };
+allow smartcharging sysfs_batteryinfo:dir { ioctl read getattr lock open watch watch_reads search };
+allow smartcharging sysfs_batteryinfo:file { ioctl read getattr lock map open watch watch_reads };
+allow smartcharging sysfs_batteryinfo:lnk_file { ioctl read getattr lock map open watch watch_reads };
