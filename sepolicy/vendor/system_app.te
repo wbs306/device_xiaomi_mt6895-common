@@ -34,3 +34,7 @@ allow system_app sysfs_usb_supply:dir { ioctl read getattr lock open watch watch
 
 allow system_app sysfs_battery_supply:file { ioctl read getattr lock map open watch watch_reads };
 allow system_app sysfs_battery_supply:dir { ioctl read getattr lock open watch watch_reads search };
+
+# FM Radio
+get_prop(system_app, wmt_prop)
+get_prop(system_app, mtk_default_prop)
