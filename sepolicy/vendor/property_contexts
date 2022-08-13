@@ -6,6 +6,7 @@ vendor.all.modules.ready                    u:object_r:vendor_mtk_device_prop:s0
 
 # Mediatek
 vendor.bluetooth.ldac.abr u:object_r:vendor_mtk_default_prop:s0
+ro.vendor.soc u:object_r:vendor_mtk_soc_prop:s0
 
 # Thermal
 vendor.sys.thermal.data.path                u:object_r:vendor_thermal_normal_prop:s0
