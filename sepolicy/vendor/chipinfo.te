@@ -1,6 +1,8 @@
 type chipinfo, domain;
 type chipinfo_exec, file_type, exec_type, vendor_file_type;
 
+type sysfs_soc, fs_type, sysfs_type;
+
 type_transition init chipinfo_exec:process chipinfo;
 
 dontaudit init chipinfo:process { noatsecure };

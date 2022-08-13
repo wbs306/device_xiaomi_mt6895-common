@@ -82,5 +82,10 @@ genfscon sysfs /devices/platform/mt_charger/power_supply u:object_r:sysfs_batter
 genfscon sysfs /devices/platform/charger/power_supply u:object_r:sysfs_batteryinfo:s0
 genfscon sysfs /devices/virtual/power_supply u:object_r:sysfs_power_supply:s0
 
+# SOC
+genfscon sysfs /firmware/devicetree/base/soc/mddriver/md1_ccb_gear_list u:object_r:sysfs_soc:s0
+genfscon sysfs /firmware/devicetree/base/soc/mddriver/md1_ccb_cap_gear u:object_r:sysfs_soc:s0
+genfscon sysfs /devices/soc0  u:object_r:sysfs_soc:s0
+
 # USB PD
 genfscon sysfs /sys/devices/platform/pd_adapter/Charging_Adapter/pd_adapter u:object_r:sysfs_usbpd_device:s0
