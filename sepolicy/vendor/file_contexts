@@ -16,6 +16,9 @@
 # Charge
 /data/vendor/charge_logger(/.*)?                u:object_r:charge_log_file:s0
 
+# Chipinfo
+/vendor/bin/chipinfo u:object_r:chipinfo_exec:s0
+
 # Eara io
 /data/vendor/eara_io(/.*)? u:object_r:eara_io_data_file:s0
 

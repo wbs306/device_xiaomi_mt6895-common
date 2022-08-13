@@ -8,3 +8,5 @@ allow init sysfs_usb_supply:file { setattr };
 
 allow init sysfs_usbpd_device:file setattr;
 allow ueventd sysfs_usbpd_device:file { write lock append map open };
+
+allow init chipinfo_exec:file { read getattr map execute open };
