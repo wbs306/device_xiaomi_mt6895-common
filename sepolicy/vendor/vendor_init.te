@@ -6,3 +6,6 @@ get_prop(vendor_init, vendor_mtk_device_prop)
 
 set_prop(vendor_init, vendor_mtk_fast_charging_support_prop)
 get_prop(vendor_init, vendor_mtk_fast_charging_support_prop)
+
+set_prop(vendor_init, vendor_mtk_debug_sf_cpupolicy_prop)
+get_prop(vendor_init, vendor_mtk_debug_sf_cpupolicy_prop)
