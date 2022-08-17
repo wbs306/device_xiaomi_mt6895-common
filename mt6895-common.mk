@@ -372,6 +372,10 @@ PRODUCT_PACKAGES += \
     vndservice \
     vndservicemanager
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.config@1.0.vendor \
