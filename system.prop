@@ -37,6 +37,9 @@ sys.ipo.pwrdncap=2
 # Kernel
 ro.kernel.zio=38,108,105,16
 
+# Logcat
+persist.log.tag.gralloc4=S
+
 # Media
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
