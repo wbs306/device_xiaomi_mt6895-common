@@ -1,0 +1,7 @@
+type gpu_governor, domain, coredomain;
+type gpu_governor_exec, file_type, exec_type;
+type gpu_governor_data_file, file_type, data_file_type;
+
+init_daemon_domain(gpu_governor)
+
+allow gpu_governor gpu_governor_data_file:file rw_file_perms;

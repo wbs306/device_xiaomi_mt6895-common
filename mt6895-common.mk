@@ -151,6 +151,13 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor
 
+# GPU ondemand governor
+PRODUCT_PACKAGES += \
+    ondemand_gpu.sh
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/ondemand_mtk:$(TARGET_COPY_OUT_SYSTEM)/bin/ondemand_mtk
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
