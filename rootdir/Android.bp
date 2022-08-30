@@ -28,6 +28,11 @@ sh_binary {
     src: "bin/set_permissive.sh"
 }
 
+sh_binary {
+    name: "ondemand_gpu.sh",
+    src: "bin/ondemand_gpu.sh"
+}
+
 // Init configuration files
 prebuilt_etc {
     name: "init.batterysecret.rc",
