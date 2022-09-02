@@ -231,7 +231,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlay \
     NotchBarKiller \
     SystemUIOverlay \
-    TetheringOVerlay \
+    TetheringConfigOverlay \
     WifiOverlay
 
 # Partitions
