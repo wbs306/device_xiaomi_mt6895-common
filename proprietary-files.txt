@@ -776,11 +776,6 @@ vendor/lib64/libdlbdsservice.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
-# Dumpstate
-vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi
-vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc
-vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml
-
 # Fingerprint
 vendor/lib/hw/fingerprint.fpc_isee.so
 vendor/lib/hw/fingerprint.goodix.so
