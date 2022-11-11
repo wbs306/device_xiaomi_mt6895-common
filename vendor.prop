@@ -22,6 +22,7 @@ bluetooth.profile.vcp.controller.enabled=true
 
 # Display
 debug.hwui.skia_atrace_enabled=false
+debug.sf.disable_client_composition_cache=1
 ro.config.avoid_gfx_accel=true
 
 # Media
