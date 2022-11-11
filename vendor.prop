@@ -22,3 +22,6 @@ bluetooth.profile.vcp.controller.enabled=true
 
 # Display
 debug.hwui.skia_atrace_enabled=false
+
+# Zygote
+zygote.critical_window.minute=10
