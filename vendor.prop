@@ -23,5 +23,8 @@ bluetooth.profile.vcp.controller.enabled=true
 # Display
 debug.hwui.skia_atrace_enabled=false
 
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
 # Zygote
 zygote.critical_window.minute=10
