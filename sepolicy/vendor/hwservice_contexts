@@ -1,2 +1,0 @@
-vendor.xiaomi.hardware.otrpagent::IOTrPAgent        u:object_r:hal_otrpagent_hwservice:s0
-vendor.xiaomi.hardware.micharge::IMiCharge          u:object_r:hal_micharge_hwservice:s0
