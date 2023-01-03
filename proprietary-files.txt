@@ -85,8 +85,6 @@ vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
 
 # Bluetooth
-lib64/libaptXHD_encoder.so
-lib64/libaptX_encoder.so
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
@@ -670,6 +668,7 @@ vendor/lib/hw/mt6895/vulkan.mali.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
+vendor/lib/libcomposer_ext.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
 vendor/lib/libgralloc_metadata.so
@@ -677,6 +676,7 @@ vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libmml.so
 vendor/lib/mt6895/arm.graphics-V1-ndk_platform.so
 vendor/lib/mt6895/libpqparamparser.so
+vendor/lib/vendor.mediatek.hardware.composer_ext@1.0.so
 vendor/lib/vendor.mediatek.hardware.mms@1.0.so
 vendor/lib/vendor.mediatek.hardware.mms@1.1.so
 vendor/lib/vendor.mediatek.hardware.mms@1.2.so
@@ -1086,9 +1086,7 @@ vendor/lib64/wechat.beanpod.so
 bin/vtservice
 etc/init/init.vtservice.rc
 framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
 lib/libmtk_vt_wrapper.so
-lib/libmtkavenhancements.so
 lib/libmtkperf_client.so
 lib/libsysenv_system.so
 lib/libvcodec_cap.so
@@ -1100,7 +1098,6 @@ lib64/libimsma_rtp.so
 lib64/libimsma_socketwrapper.so
 lib64/libmtk_vt_service.so
 lib64/libmtk_vt_wrapper.so
-lib64/libmtkavenhancements.so
 lib64/libmtkperf_client.so
 lib64/libsignal.so
 lib64/libsink.so
@@ -1124,6 +1121,7 @@ vendor/lib/libcodec2_mtk_c2store.so
 vendor/lib/libcodec2_mtk_vdec.so
 vendor/lib/libcodec2_mtk_venc.so
 vendor/lib/libcodec2_soft_common.so
+vendor/lib/libcodec2_vpp_dump_mtk_yuv_plugin.so
 vendor/lib/libcodec2_vpp_qt_plugin.so
 vendor/lib/libcodec2_vpp_rs_plugin.so
 vendor/lib/libformatter.so
@@ -1137,6 +1135,7 @@ vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
 vendor/lib64/libcodec2_soft_common.so
+vendor/lib64/libcodec2_vpp_dump_mtk_yuv_plugin.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
@@ -1329,9 +1328,10 @@ vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_hifi3.xml
 vendor/etc/cit_param_config.json
 vendor/etc/cust_color.xml
+vendor/etc/cust_color_36.xml
+vendor/etc/cust_color_42.xml
 vendor/etc/default_pd_calibration.bin
 vendor/etc/dolby_vision.cfg
-vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
 vendor/etc/ecc_list_OP09.xml
@@ -1481,7 +1481,6 @@ vendor/etc/vintf/manifest/manifest_apuware_apusys.xml
 vendor/etc/vintf/manifest/manifest_apuware_hmp.xml
 vendor/etc/vintf/manifest/manifest_apuware_utils.xml
 vendor/etc/vintf/manifest/manifest_hwcomposer.xml
-vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.cld.xml
 vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.otrpagent@2.0.xml
 vendor/etc/vintf/manifest/manifest_wechat.xml
@@ -2021,12 +2020,6 @@ vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
 vendor/lib64/vendor.xiaomi.sensor.communicate@1.0.so
 
 # NFC
-system_ext/lib/vendor.nxp.hardware.nfc@1.0.so
-system_ext/lib/vendor.nxp.hardware.nfc@1.1.so
-system_ext/lib/vendor.nxp.hardware.nfc@2.0.so
-system_ext/lib64/vendor.nxp.hardware.nfc@1.0.so
-system_ext/lib64/vendor.nxp.hardware.nfc@1.1.so
-system_ext/lib64/vendor.nxp.hardware.nfc@2.0.so
 vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
 vendor/etc/init/vendor.nxp.hardware.nfc@2.0-service.rc
 vendor/lib/nfc_nci.nqx.default.hw.v1.so
@@ -2144,10 +2137,10 @@ vendor/lib64/vendor.qti.sla.service@1.0-impl.so
 vendor/lib64/vendor.qti.sla.service@1.0.so
 
 # SPN
-etc/apns-conf.xml
 etc/fiveG-apns-conf.xml
 etc/spn-conf.xml
 etc/xcap-apns-conf.xml
+product/etc/apns-conf.xml
 
 # Secure element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek

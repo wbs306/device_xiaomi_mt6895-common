@@ -5,7 +5,7 @@
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
 # 1 "vendor/mediatek/proprietary/hardware/fstab/mt6895/fstab.in.mt6895" 2
-# 151 "vendor/mediatek/proprietary/hardware/fstab/mt6895/fstab.in.mt6895"
+# 169 "vendor/mediatek/proprietary/hardware/fstab/mt6895/fstab.in.mt6895"
 system /system erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 system /system ext4 ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 
@@ -16,9 +16,14 @@ vendor /vendor ext4 ro wait,slotselect,avb,logical,first_stage_mount
 product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
 product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
+system_ext /system_ext erofs ro wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
 
 odm /odm erofs ro wait,slotselect,avb,logical,first_stage_mount
 odm /odm ext4 ro wait,slotselect,avb,logical,first_stage_mount
+
+vendor_dlkm /vendor_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
+
+odm_dlkm /odm_dlkm erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 
 /dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
@@ -120,6 +125,3 @@ odm /odm ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 /dev/block/by-name/vbmeta /vbmeta emmc defaults defaults
-
-# ZRAM
-/dev/block/zram0 none swap defaults zramsize=55%,zram_backingdev_size=512M
