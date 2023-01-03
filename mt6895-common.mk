@@ -209,6 +209,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/mtk_plpath_utils:recovery/root/system/bin/mtk_plpath_utils \
     $(LOCAL_PATH)/prebuilts/mtk-plpath-utils.rc:recovery/root/system/etc/init/mtk-plpath-utils.rc
 
+# NDK Platform backend
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
+    android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
+    android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
+    android.hardware.vibrator-V1-ndk_platform.vendor:64
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
@@ -363,13 +370,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservice \
     vndservicemanager
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-V1-ndk_platform.vendor
-
-# VNDK
-PRODUCT_EXTRA_VNDK_VERSIONS := 31
 
 # Wifi
 PRODUCT_PACKAGES += \
