@@ -265,6 +265,7 @@ on post-fs-data
 
     chmod 755 /mnt/vendor/nvcfg/sensor
     chmod +r /mnt/vendor/nvcfg/sensor/gyro_cali.json
+    chmod +r /mnt/vendor/nvcfg/sensor/gyro_bias.json
     #XIAOMI: Create camera directory for calibration file --end
 
     #Create Camera Dip Debug Folder
