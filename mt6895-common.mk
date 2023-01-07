@@ -211,11 +211,14 @@ PRODUCT_COPY_FILES += \
 
 # NDK Platform backend
 PRODUCT_PACKAGES += \
+    android.hardware.gnss-V1-ndk_platform.vendor:64 \
     android.hardware.memtrack-V1-ndk_platform.vendor:64 \
+    android.hardware.power-V2-ndk_platform.vendor:64 \
     android.hardware.security.keymint-V1-ndk_platform.vendor:64 \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor:64 \
     android.hardware.security.secureclock-V1-ndk_platform.vendor:64 \
-    android.hardware.vibrator-V1-ndk_platform.vendor:64
+    android.hardware.vibrator-V1-ndk_platform.vendor:64 \
+    android.system.keystore2-V1-ndk_platform.vendor:64
 
 # NFC
 PRODUCT_PACKAGES += \
