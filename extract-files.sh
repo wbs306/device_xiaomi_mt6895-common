@@ -66,7 +66,7 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml)
             sed -i "s/vibratorfeature/default/g" "${2}"
             ;;
-        vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
+        vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service | vendor/bin/hw/mt6895/camerahalserver | vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
             ;;
     esac
