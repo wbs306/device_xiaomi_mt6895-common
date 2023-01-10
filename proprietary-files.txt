@@ -1193,8 +1193,6 @@ vendor/app/MipayService/MipayService.apk
 vendor/app/SensorTestTool/SensorTestTool.apk
 vendor/bin/AgentTest
 vendor/bin/DFtool
-vendor/bin/MI_IC
-vendor/bin/MI_RIC
 vendor/bin/Ois_Tset_Factory_White
 vendor/bin/SMBlemishAnalyzer_new
 vendor/bin/SoterProvisioningTool_isee
@@ -1385,8 +1383,6 @@ vendor/etc/init/ipsec_mon.rc
 vendor/etc/init/lbs_hidl_service.rc
 vendor/etc/init/loghidlvendorservice.rc
 vendor/etc/init/md_monitor.rc
-vendor/etc/init/mi_ic.rc
-vendor/etc/init/mi_ric.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/init/mtk_pkm_service.rc
 vendor/etc/init/mtklog.rc
