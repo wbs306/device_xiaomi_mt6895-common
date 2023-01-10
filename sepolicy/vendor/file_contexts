@@ -6,8 +6,8 @@
 /data/vendor/display(/.*)?              u:object_r:vendor_display_vendor_data_file:s0
 
 # GPU governor
-/system/bin/ondemand_mtk                u:object_r:gpu_governor_exec:s0
-/system/bin/ondemand_gpu.sh             u:object_r:gpu_governor_exec:s0
+/vendor/bin/ondemand_mtk                u:object_r:gpu_governor_exec:s0
+/vendor/bin/ondemand_gpu.sh             u:object_r:gpu_governor_exec:s0
 /data/gpu_freq_table.conf               u:object_r:gpu_governor_data_file:s0
 
 # Hals

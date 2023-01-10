@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     ondemand_gpu.sh
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilts/ondemand_mtk:$(TARGET_COPY_OUT_SYSTEM)/bin/ondemand_mtk
+    $(LOCAL_PATH)/prebuilts/ondemand_mtk:$(TARGET_COPY_OUT_VENDOR)/bin/ondemand_mtk
 
 # Health
 PRODUCT_PACKAGES += \

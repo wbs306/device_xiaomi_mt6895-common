@@ -1,5 +1,5 @@
-type gpu_governor, domain, coredomain;
-type gpu_governor_exec, file_type, exec_type;
+type gpu_governor, domain;
+type gpu_governor_exec, file_type, exec_type, vendor_file_type;
 type gpu_governor_data_file, file_type, data_file_type;
 
 init_daemon_domain(gpu_governor)
