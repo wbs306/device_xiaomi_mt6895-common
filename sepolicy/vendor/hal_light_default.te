@@ -1,0 +1,3 @@
+type vendor_sysfs_graphics, fs_type, sysfs_type;
+
+allow hal_light_default vendor_sysfs_graphics:file rw_file_perms;
