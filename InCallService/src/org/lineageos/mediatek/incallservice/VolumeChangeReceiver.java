@@ -17,6 +17,8 @@ public class VolumeChangeReceiver extends BroadcastReceiver {
 
     public VolumeChangeReceiver(AudioManager audioManager) {
         mAudioManager = audioManager;
+        String parameters = "volumeDevice=1;volumeIndex=7;volumeStreamType=0";
+        AudioSystem.setParameters(parameters);
     }
 
     private void handleVolumeStateChange(Intent intent) {
