@@ -1113,6 +1113,7 @@ system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek-64b.rc
+vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
 vendor/lib/libavservices_minijail_vendor.so
 vendor/lib/libcodec2_hidl@1.1.so
 vendor/lib/libcodec2_hidl@1.2.so
