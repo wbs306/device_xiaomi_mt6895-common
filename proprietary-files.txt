@@ -84,6 +84,10 @@ vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libswgamedap.so
 vendor/lib64/soundfx/libswvqe.so
 
+# Bluetooth (aptX) - from xaga MIUI V13.2.3.0.TLOCNXM
+lib64/libaptX_encoder.so|6ebdf942fb9e31f3fbe7864303160e5942e301e4
+lib64/libaptXHD_encoder.so|cf184e822e8e659e1dcada9e6409104caabc1751
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
