@@ -300,11 +300,11 @@ on post-fs-data
 # -----------------------
 # Add by MTK
     # SCP log
-    chmod 0660 /sys/class/misc/scp/scp_mobile_log
+    chmod 0664 /sys/class/misc/scp/scp_mobile_log
     chown root system /sys/class/misc/scp/scp_mobile_log
     chmod 0220 /sys/class/misc/scp/scp_log_flush
     chown root system /sys/class/misc/scp/scp_log_flush
-    chmod 0440 /dev/scp
+    chmod 0444 /dev/scp
     chown root system /dev/scp
     chmod 0664 /sys/class/misc/scp/scp_ee_force_ke
     chown root system /sys/class/misc/scp/scp_ee_force_ke

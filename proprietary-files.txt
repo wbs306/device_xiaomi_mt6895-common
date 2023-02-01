@@ -977,6 +977,7 @@ vendor/firmware/98_nfcCardSlow_RTP.bin
 vendor/firmware/9_ringTone4_P_RTP.bin
 vendor/firmware/BT_FW.cfg
 vendor/firmware/WIFI_RAM_CODE_soc7_0_1b_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc7_0_1b_t_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc7_0_1c_1.bin
 vendor/firmware/aw8697_haptic.bin
 vendor/firmware/aw8697_rtp_1.bin
@@ -1003,12 +1004,17 @@ vendor/firmware/mt6635_fm_v1_coeff.bin
 vendor/firmware/mt6635_fm_v1_patch.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc7_0_ram_bt_1_1_hdr.bin
+vendor/firmware/soc7_0_ram_bt_1_t_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1a_1_hdr.bin
 vendor/firmware/soc7_0_ram_bt_1b_1_hdr.bin
+vendor/firmware/soc7_0_ram_bt_1b_t_1_hdr.bin
 vendor/firmware/soc7_0_ram_mcu_1_1_hdr.bin
+vendor/firmware/soc7_0_ram_mcu_1_t_1_hdr.bin
 vendor/firmware/soc7_0_ram_mcu_1a_1_hdr.bin
 vendor/firmware/soc7_0_ram_mcu_1b_1_hdr.bin
+vendor/firmware/soc7_0_ram_mcu_1b_t_1_hdr.bin
 vendor/firmware/soc7_0_ram_wmmcu_1b_1_hdr.bin
+vendor/firmware/soc7_0_ram_wmmcu_1b_t_1_hdr.bin
 vendor/firmware/soc7_0_ram_wmmcu_1c_1_hdr.bin
 vendor/firmware/soc_fm_v1_coeff.bin
 vendor/firmware/soc_fm_v1_patch.bin
@@ -1323,8 +1329,8 @@ vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/MNL_Config.xml
 vendor/etc/VideoLog_dynamic.xml
-vendor/etc/apdb/APDB_MT6895___W2152
-vendor/etc/apdb/APDB_MT6895___W2152_ENUM
+vendor/etc/apdb/APDB_MT6895___W2230
+vendor/etc/apdb/APDB_MT6895___W2230_ENUM
 vendor/etc/audio_device.xml
 vendor/etc/audio_policy.conf
 vendor/etc/aurisys_config.xml
@@ -1335,6 +1341,7 @@ vendor/etc/cust_color_36.xml
 vendor/etc/cust_color_42.xml
 vendor/etc/default_pd_calibration.bin
 vendor/etc/dolby_vision.cfg
+vendor/etc/ecc_list.xml
 vendor/etc/ecc_list_OP01.xml
 vendor/etc/ecc_list_OP02.xml
 vendor/etc/ecc_list_OP09.xml
