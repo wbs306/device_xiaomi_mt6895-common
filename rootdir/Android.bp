@@ -25,7 +25,8 @@ sh_binary {
 
 sh_binary {
     name: "set_permissive.sh",
-    src: "bin/set_permissive.sh"
+    src: "bin/set_permissive.sh",
+    vendor: true
 }
 
 sh_binary {

@@ -25,5 +25,8 @@
 # RPMB device
 /dev/0:0:0:49476  u:object_r:teei_rpmb_device:s0
 
+# Set permissive
+/vendor/bin/set_permissive.sh                     u:object_r:set_permissive_exec:s0
+
 # Thermals
 /vendor/bin/mi_thermald       										u:object_r:mi_thermald_exec:s0
