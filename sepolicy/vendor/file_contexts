@@ -4,6 +4,7 @@
 # Display
 /mnt/vendor/persist/display(/.*)?       u:object_r:vendor_persist_display_file:s0
 /data/vendor/display(/.*)?              u:object_r:vendor_display_vendor_data_file:s0
+/dev/mi_display/disp_feature            u:object_r:vendor_displayfeature_device:s0
 
 # GPU governor
 /vendor/bin/ondemand_mtk                u:object_r:gpu_governor_exec:s0
