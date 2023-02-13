@@ -12,7 +12,7 @@
 /data/gpu_freq_table.conf               u:object_r:gpu_governor_data_file:s0
 
 # Graphics
-/sys/devices/virtual/mi_display/disp_feature/disp-DSI-0/brightness_clone  u:object_r:vendor_sysfs_graphics:s0
+/sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?        u:object_r:vendor_sysfs_displayfeature:s0
 
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.citsensorservice@1\.1-service u:object_r:hal_citsensorservice_default_exec:s0
