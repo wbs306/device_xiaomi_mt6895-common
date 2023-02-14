@@ -9,6 +9,10 @@
 /data/vendor/display(/.*)?              u:object_r:vendor_display_vendor_data_file:s0
 /dev/mi_display/disp_feature            u:object_r:vendor_displayfeature_device:s0
 
+# Fingerprint
+/sys/devices/platform/fingerprint(/.*)? u:object_r:vendor_sysfs_fp:s0
+/data/vendor/fpdump(/.*)?               u:object_r:vendor_fingerprint_data_file_fpdump:s0
+
 # GPU governor
 /vendor/bin/ondemand_mtk                u:object_r:gpu_governor_exec:s0
 /vendor/bin/ondemand_gpu.sh             u:object_r:gpu_governor_exec:s0
