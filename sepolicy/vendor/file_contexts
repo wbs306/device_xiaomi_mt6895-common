@@ -1,3 +1,6 @@
+# Backlight
+/sys/class/leds/lcd-backlight(/.*)?     u:object_r:vendor_sysfs_backlight:s0
+
 # Charger
 /vendor/bin/batterysecret               u:object_r:batterysecret_exec:s0
 

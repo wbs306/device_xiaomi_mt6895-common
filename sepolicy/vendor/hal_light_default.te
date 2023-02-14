@@ -1,1 +1,4 @@
-allow hal_light_default vendor_sysfs_graphics:file rw_file_perms;
+type vendor_sysfs_backlight, fs_type, sysfs_type;
+
+allow hal_light_default vendor_sysfs_backlight:dir search;
+allow hal_light_default vendor_sysfs_backlight:{file lnk_file} rw_file_perms;
