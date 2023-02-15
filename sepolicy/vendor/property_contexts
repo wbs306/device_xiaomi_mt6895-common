@@ -10,5 +10,10 @@ persist.vendor.sys.fp.          u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.info      u:object_r:vendor_fp_info_prop:s0
 persist.vendor.sys.fp.uid       u:object_r:vendor_fp_info_prop:s0
 
+# NFC
+vendor.nfc.             u:object_r:vendor_nfc_mi_prop:s0
+ro.vendor.nfc.          u:object_r:vendor_nfc_mi_prop:s0
+ro.vendor.se.           u:object_r:vendor_nfc_mi_prop:s0
+
 # Thermal
 vendor.sys.thermal.     				                u:object_r:thermal_engine_prop:s0
