@@ -1026,10 +1026,9 @@ on property:sys.boot_completed=1
     write /proc/bootprof 0
 
     # start gpu ondemand governor
-    exec /vendor/bin/ondemand_gpu.sh
     start ondemand_mtk
 
-service ondemand_mtk /vendor/bin/ondemand_mtk
+service ondemand_mtk /vendor/bin/ondemand_gpu.sh
     class main
     user root
 	seclabel u:r:su:s0

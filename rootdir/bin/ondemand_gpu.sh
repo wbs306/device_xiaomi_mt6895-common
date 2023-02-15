@@ -11,3 +11,5 @@ $opp_list
 if [[ ! -f $freq_table ]]; then
     echo "$preset" > $freq_table
 fi
+
+exec /vendor/bin/ondemand_mtk
