@@ -19,7 +19,7 @@ allow vendorcodec tombstoned_crash_socket:sock_file write;
 allow vendorcodec tombstoned:unix_stream_socket connectto;
 allow vendorcodec tombstoned:fd use;
 allow vendorcodec tombstone_data_file:file append;
-allow vendorcodec dmabuf_system_heap_device:chr_file { ioctl read write open };
+allow vendorcodec dmabuf_system_heap_device:chr_file { ioctl read write open getattr };
 allow vendorcodec dmabuf_system_secure_heap_device:chr_file { ioctl read write open };
 allow vendorcodec proc_ged:file rw_file_perms;
 allow vendorcodec unlabeled:filesystem getattr;
