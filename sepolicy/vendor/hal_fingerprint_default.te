@@ -19,3 +19,5 @@ allow hal_fingerprint_default vendor_sysfs_fp:file { ioctl read write open };
 
 allow hal_fingerprint_default vendor_fingerprint_data_file_fpdump:dir create_dir_perms;
 allow hal_fingerprint_default vendor_fingerprint_data_file_fpdump:file create_file_perms;
+
+hal_client_domain(hal_fingerprint_default, hal_power)
