@@ -58,7 +58,6 @@ etc/audio_effects.conf
 vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/a2dp_in_audio_policy_configuration.xml
 vendor/etc/audio_effects.xml
-vendor/etc/audio_policy_configuration.xml
 vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml
 vendor/etc/audio_policy_configuration_a2dp_offload_disabled_cg_enabled.xml
 vendor/etc/audio_policy_configuration_a2dp_offload_enable_cg_enable.xml
