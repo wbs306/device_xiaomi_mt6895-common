@@ -35,6 +35,18 @@
 /(vendor|system/vendor)/bin/hw/vendor\.xiaomi\.hardware\.vibratorfeature\.service    u:object_r:hal_vibrator_default_exec:s0
 /vendor/bin/hw/mfp-daemon u:object_r:hal_fingerprint_default_exec:s0
 
+# Mitee
+/mnt/vendor/persist/data(/.*)?                    u:object_r:mitee_sfs_file:s0
+/dev/tee0                                         u:object_r:mitee_client_device:s0
+/dev/teepriv0                                     u:object_r:mitee_client_device:s0
+/dev/ufs-bsg0                                     u:object_r:mitee_client_device:s0
+
+# Mlipay
+/(vendor|system/vendor)/bin/mlipayd_mitee         u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/mlipayd_isee          u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/mlipayd_mitee@1.1     u:object_r:hal_mlipay_default_exec:s0
+/(vendor|system/vendor)/bin/mlipayd_isee@1.1      u:object_r:hal_mlipay_default_exec:s0
+
 # NFC
 /dev/nq-nci  												u:object_r:nfc_device:s0
 /dev/p73     												u:object_r:nfc_device:s0

@@ -15,3 +15,6 @@ com.fingerprints.extension::IFingerprintCalibration                             
 com.fingerprints.extension::IFingerprintOptical                                      u:object_r:hal_fingerprint_hwservice:s0
 com.fingerprints.extension::IFingerprintSenseTouch                                   u:object_r:hal_fingerprint_hwservice:s0
 vendor.xiaomi.hardware.dtool::IDtool                                                 u:object_r:hal_fingerprint_hwservice:s0
+
+# Mlipay
+vendor.xiaomi.hardware.mlipay::IMlipayService                                        u:object_r:hal_mlipay_hwservice:s0
