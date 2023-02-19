@@ -1,4 +1,5 @@
 # Arcsoft
+/vendor/lib(64)?/libArcNetMtk\.so                         u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_beautyshot\.so                u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_distortion_correction\.so     u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libarcsoft_dualcam_refocus_image\.so     u:object_r:same_process_hal_file:s0
@@ -50,6 +51,7 @@
 /vendor/lib(64)?/libanc_dc_plugin_xiaomi_v2\.so           u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libanc_supervq\.so                       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libbeauty_face_interface\.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libc\+\+_shared\.so                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libcom.xiaomi.pluginutils\.so            u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmiai_deblur\.so                       u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmiai_portraitsupernight\.so           u:object_r:same_process_hal_file:s0
@@ -61,6 +63,11 @@
 /vendor/lib(64)?/libmiStereoFactoryRemapBasicLib\.so      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmiStereoFactoryRemapLib\.so           u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libmpbase\.so                            u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libwa_depth\.so                          u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libwa_dof\.so                            u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libwa_refocus\.so                        u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/libwa_widelens_undistort\.so             u:object_r:same_process_hal_file:s0
+/vendor/lib(64)?/librelight_only\.so                      u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/libxmi_high_dynamic_range\.so            u:object_r:same_process_hal_file:s0
 
 # Charger
