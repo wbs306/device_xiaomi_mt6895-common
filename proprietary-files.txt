@@ -1590,6 +1590,7 @@ vendor/lib/libipsec_ims_shr.so
 vendor/lib/liblogwrap_vendor.so
 vendor/lib/libmfido_isee.so
 vendor/lib/libminiui.so
+vendor/lib/libmiresample.so
 vendor/lib/libmisound.so
 vendor/lib/libmisoundcrossfade.so
 vendor/lib/libmlipay_isee.so
@@ -1670,6 +1671,7 @@ vendor/lib/libvcodec_utility_plat.mt6895.so
 vendor/lib/libvcodec_utility_plat.mt6983.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libviagpsrpc.so
+vendor/lib/libvoiprec.so
 vendor/lib/libvow_ap_test_aa.so
 vendor/lib/libvow_ap_test_dd.so
 vendor/lib/libvow_ap_test_ha.so
@@ -1866,6 +1868,7 @@ vendor/lib64/libmialgoengine.so
 vendor/lib64/libmialgoengine2.so
 vendor/lib64/libminiui.so
 vendor/lib64/libmipc.so
+vendor/lib64/libmiresample.so
 vendor/lib64/libmisound.so
 vendor/lib64/libmisoundcrossfade.so
 vendor/lib64/libmlipay_isee.so
@@ -1958,6 +1961,7 @@ vendor/lib64/libvcodecdrv_header_stub.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviagpsrpc.so
 vendor/lib64/libviamipc-ril.so
+vendor/lib64/libvoiprec.so
 vendor/lib64/libvow_ap_test_aa.so
 vendor/lib64/libvow_ap_test_dd.so
 vendor/lib64/libvow_ap_test_ha.so
