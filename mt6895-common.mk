@@ -358,7 +358,8 @@ PRODUCT_COPY_FILES += \
 # Sensor
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-ScopedWakelock.vendor \
-    android.hardware.sensors@2.1.vendor \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.hardware.sensors@2.1.vendor
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
