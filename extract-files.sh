@@ -66,8 +66,14 @@ function blob_fixup() {
         vendor/etc/vintf/manifest/vendor.xiaomi.hardware.vibratorfeature.service.xml)
             sed -i "s/vibratorfeature/default/g" "${2}"
             ;;
-        vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service | vendor/bin/hw/mt6895/camerahalserver | vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
+        vendor/bin/hw/mt6895/camerahalserver)
             "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            "${PATCHELF}" --replace-needed libbinder.so libbinder-v32.so "${2}"
+            "${PATCHELF}" --replace-needed libhidlbase.so libhidlbase-v32.so "${2}"
+            ;;
+        vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service | vendor/bin/hw/android.hardware.thermal@2.0-service.mtk)
+            "${PATCHELF}" --replace-needed libutils.so libutils-v32.so "${2}"
+            "${PATCHELF}" --replace-needed libhidlbase.so libhidlbase-v32.so "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod)
             "${PATCHELF}" --add-needed android.hardware.security.rkp-V1-ndk.so "${2}"
